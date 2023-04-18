@@ -9,6 +9,8 @@ class Order < ApplicationRecord
 
   before_validation :set_price
 
+  accepts_nested_attributes_for :order_products, allow_destroy: true
+
 private
 
   def set_price
