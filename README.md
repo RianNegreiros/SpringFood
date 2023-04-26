@@ -25,7 +25,7 @@ MVP application inspired on [IFood](https://www.ifood.com.br/) built with Ruby O
   ```
 
    - ***Optionally*** you can seed the database:
-     ```bash
+    ```bash
     rails db:seed
     ```
 
