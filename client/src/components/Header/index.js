@@ -16,7 +16,6 @@ export default function Header() {
     <Navbar bg='white' expand='lg' className='border-bottom border-custom-gray'>
       <Navbar.Brand className='mx-3'>
         <Link href='/restaurants'>
-          <a>
             <Image
               src='/logo.png'
               alt="logo"
@@ -24,7 +23,6 @@ export default function Header() {
               height={44}
               className='clickable_effect'
             />
-          </a>
         </Link>
       </Navbar.Brand>
 
