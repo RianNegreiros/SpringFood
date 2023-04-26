@@ -8,15 +8,17 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Ifood Clone</title>
+        <title>IFood Clone</title>
         <link ref="icon" href="/favicon.icon" />
       </Head>
 
       <main>
-        <Header />
-        <Container className='mt-6'>
-          <Component {...pageProps} />
-        </Container>
+        <RecoilRoot>
+          <Header />
+          <Container className='mt-6'>
+            <Component {...pageProps} />
+          </Container>
+        </RecoilRoot>
       </main>
     </>
   )

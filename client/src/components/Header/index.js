@@ -20,7 +20,22 @@ export default function Header() {
           </a>
         </Link>
       </Navbar.Brand>
-      <SearchBox />
+
+      <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+
+      <Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end'>
+        <Nav className='py-2 text-center'>
+          <span className='clickable_effect' onClick={() => setAddressModalShow(true)}>
+            <FaCrosshairs className='mb-1' /> Address
+          </span>
+          <AddressModal
+            show={addressModalShow}
+            onHide={() => setAddressModalShow(false)}
+            onShow={() => setAddressModalShow(true)}
+          />
+        </Nav>
+        <SearchBox />
+      </Navbar.Collapse>
     </Navbar>
   )
 }
