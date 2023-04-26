@@ -1,9 +1,9 @@
-import { Row, Col, Spinner, Alert } from 'react-bootstrap';
-import Restaurant from './Restaurant';
-import getRestaurants from '@/services/getRestaurants';
+import { Row, Col, Spinner, Alert } from 'react-bootstrap'
+import Restaurant from './Restaurant'
+import getRestaurants from '@/services/getRestaurants'
 
 export default function ListRestaurants() {
-  const { restaurants, isLoading, isError } = getRestaurants();
+  const { restaurants, isLoading, isError } = getRestaurants()
 
   function renderContent() {
     if(isError)
