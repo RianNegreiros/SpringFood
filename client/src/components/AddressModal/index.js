@@ -18,7 +18,7 @@ export default function AddressModal(props) {
     <Modal
       show={props.show}
       size='sm'
-      aria-labelledby='contained-modal-title-vcenter'
+      aria-labelledby='contained-modal-title-center'
       centered
       backdrop='static'
       keybord={false}
