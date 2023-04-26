@@ -3,14 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3001",
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "5.0.0",
     "next": "13.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-bootstrap": "1.5.2",
+    "react-dom": "18.2.0",
+    "react-icons": "4.2.0",
+    "react-slick": "^0.29.0",
+    "recoil": "^0.7.7",
+    "recoil-persist": "^4.2.0",
+    "sass": "1.32.12",
+    "slick-carousel": "^1.8.1",
+    "swr": "0.5.5"
   }
 }

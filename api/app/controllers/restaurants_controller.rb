@@ -9,13 +9,12 @@ class RestaurantsController < ApplicationController
   end
 
   def show
-    json.partial! @restaurant
   end
 
   private
 
   def set_restaurant
-    @restaurant = Restaurant.find(params[:id])
+    @restaurant = Restaurant.find_by(id: params[:id])
   end
 
   def filter_by_query
@@ -27,8 +26,6 @@ class RestaurantsController < ApplicationController
   end
 
   def filter_by_category
-    @restaurants = @restaurants.select do |r|
-      r.category.title == params[:category]
-    end
+    @restaurants = @restaurants.joins(:category).where(categories: { title: params[:category] })
   end
 end
