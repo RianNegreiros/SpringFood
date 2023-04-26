@@ -1,6 +1,7 @@
-import { Navbar, Nav } from 'react-bootstrap';
-import Image from 'next/image';
-import Link from 'next/link';
+import { Navbar, Nav } from 'react-bootstrap'
+import Image from 'next/image'
+import Link from 'next/link'
+import SearchBox from '@/components/SearchBox'
 
 export default function Header() {
 
@@ -19,6 +20,7 @@ export default function Header() {
           </a>
         </Link>
       </Navbar.Brand>
+      <SearchBox />
     </Navbar>
   )
 }
