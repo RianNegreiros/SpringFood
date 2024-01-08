@@ -35,6 +35,8 @@ public class Order {
 
     private String number;
 
+    private String complement;
+
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
 
@@ -141,6 +143,14 @@ public class Order {
 
     public void setStatus(OrderStatus status) {
         this.status = status;
+    }
+
+    public String getComplement() {
+        return complement;
+    }
+
+    public void setComplement(String complement) {
+        this.complement = complement;
     }
 
     public enum OrderStatus {
