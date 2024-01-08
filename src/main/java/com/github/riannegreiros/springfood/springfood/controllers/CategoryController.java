@@ -1,4 +1,4 @@
-package com.github.riannegreiros.springfood.springfood;
+package com.github.riannegreiros.springfood.springfood.controllers;
 
 import com.github.riannegreiros.springfood.springfood.entities.Category;
 import com.github.riannegreiros.springfood.springfood.services.CategoryService;
