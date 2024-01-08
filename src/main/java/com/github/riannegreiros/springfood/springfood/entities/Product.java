@@ -27,6 +27,8 @@ public class Product {
 
     private Double price;
 
+    private String description;
+
     public Product() {
     }
 
@@ -85,6 +87,14 @@ public class Product {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Column(nullable = false)

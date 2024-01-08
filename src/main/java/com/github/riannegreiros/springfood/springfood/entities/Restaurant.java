@@ -29,6 +29,8 @@ public class Restaurant {
 
     private String name;
 
+    private String description;
+
     private Double deliveryTax;
 
     private String city;
@@ -142,5 +144,13 @@ public class Restaurant {
 
     public void setNumber(String number) {
         this.number = number;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

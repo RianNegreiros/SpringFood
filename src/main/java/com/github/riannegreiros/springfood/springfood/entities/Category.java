@@ -13,6 +13,10 @@ public class Category {
     @Column(nullable = false)
     private String title;
 
+    @OneToOne
+    @JoinColumn(name = "image_id")
+    private Image image;
+
     public Category() {
     }
 
@@ -35,5 +39,13 @@ public class Category {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public Image getImage() {
+        return image;
+    }
+
+    public void setImage(Image image) {
+        this.image = image;
     }
 }
